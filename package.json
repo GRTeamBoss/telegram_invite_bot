@@ -1,0 +1,5 @@
+{
+  "devDependencies": {
+    "telegraf": "^4.16.3"
+  }
+}
