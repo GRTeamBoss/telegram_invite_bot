@@ -5,6 +5,7 @@ yarn-debug.log*
 yarn-error.log*
 
 # Environment variables
+env/
 .env
 .env.local
 .env.*.local
@@ -37,3 +38,6 @@ coverage/
 
 # Optional: ignore test results
 test-results/
+
+extract.py
+file.xlsx
