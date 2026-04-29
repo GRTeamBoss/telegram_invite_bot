@@ -3,7 +3,7 @@ import { Markup } from "telegraf";
 import { Database } from "./database.js";
 import { configDotenv } from "dotenv";
 
-configDotenv({path: "./../../.env"})
+configDotenv({path: "./.env"})
 
 const bot = new Telegraf(process.env.TELEGRAM_TOKEN);
 
