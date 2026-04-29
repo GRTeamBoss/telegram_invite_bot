@@ -47,7 +47,10 @@ bot.on('contact', async (ctx) => {
   await sendPhoneLink(ctx, result)
 })
 
-bot.launch();
+exports.handler = async function(event, context) {
+  await bot.handleUpdate(JSON.parse(event.body))
+  return {statusCode: 200, body: "OK"}
+}
 
 process.once('SIGINT', () => bot.stop('SIGINT'));
 process.once('SIGTERM', () => bot.stop('SIGTERM'));
