@@ -17,7 +17,7 @@ async function checkIfPhoneExists(phone) {
     for (let j = 0; j < dataPhones[i].length; j++) {
       if (dataPhones[i][j]["тел ракам"] !== null) {
         if (dataPhones[i][j]["тел ракам"].toString().replaceAll("-", "").includes(phone)) {
-          result = `https://invite.com/?phone=${dataPhones[i][j]["тел ракам"].toString().replaceAll("-", "")}`
+          result = `https://aoru.uz/certificate.html`
         }
       }
     }
