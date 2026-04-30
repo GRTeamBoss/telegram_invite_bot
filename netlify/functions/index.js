@@ -41,6 +41,11 @@ bot.hears(/invite \+?[\d]{9}$/, async (ctx) => {
   let result = await checkIfPhoneExists(phone);
   await sendPhoneLink(ctx, result)
 })
+bot.command('invite', async (ctx) => {
+  if (ctx.message.text.length == "/invite".length) {
+    await ctx.reply("Please provide me this command with additional info like a number, please!")
+  }
+})
 bot.on('contact', async (ctx) => {
   const phone = ctx.message.contact.phone_number.slice(3);
   let result = await checkIfPhoneExists(phone);
